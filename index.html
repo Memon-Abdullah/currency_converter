@@ -6,26 +6,28 @@
     <title>Currency converter</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
     crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="app">
             <form>
-                <h6>Enter amount</h6>
+                <h1>Currency Converter</h1>
+                <h5>Enter amount</h5>
+                <input type="number" id="amount" step="any" minlength="1" maxlength="100" placeholder="Amount">
                 <br>
-                <input type="number" step="any" minlength="1" maxlength="100" placeholder="Amount">
                 <br>
                 <label>From</label>
+                <br>
                 <br>
                 <select name="from_currency" id="from_currency">
                     
                 </select>
                 <br>
-                <div class="icon">
-                    <i class="fa fa-exchange-alt"></i>
-                </div>
                 <br>
-                <label for="to_currency"></label>
+                <div class="icon"><i class="fa fa-exchange-alt"></i></div>
+                <br>
+                <label for="to_currency">To</label>
                 <br>
                 <select name="to_currency" id="to_currency">
 
@@ -38,6 +40,6 @@
             </form>
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
